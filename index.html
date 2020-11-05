@@ -1,14 +1,62 @@
 <html>
 <head>
+    <link rel="stylesheet" href="FrontEnd/Style.css">
+
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        h2{
+            text-align: center;
+            text-decoration: none;
+        color: white;
+        background-color: royalblue;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%; 
+            width: 10%;   
+        }
+        li{
+        padding:5px;
+        display: block;
+        }
+        li a{
+            text-decoration: none; 
+            padding: 5%;
+        }
+        li a:hover{
+            color: peru;
+        }
+        .active{
+            background-color: rgb(54, 241, 16);
+        }
+        img{
+            margin-left: 25%;
+            width: 50%;
+        }
+        p{
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    <h2>University</h2>
+        <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+        <img src="university.webp" alt="test image">
     <!--attribute element-->
-    <p class="demo_name">this is pragraph element </p><!--class is attribute name and
+    <p class="demo_name">University, institution of higher education, usually comprising a college of liberal arts and sciences and graduate and professional schools and having the authority to confer degrees in various fields of study. </p><!--class is attribute name and
          domo_name is attribute value, p is element name inside angle bracket open and closing 
         is content of element-->
         <!--nested element-->
-    <p>this is <strong>cute</strong>cat</p>
-    <img src="demo_img" alt="test image">
+  <!-- <p>this is <strong>cute</strong>cat</p>--> 
+   
     <!--this is called empty element and no closing tag , no inner content
     src,alt is attribute-->
 </body>

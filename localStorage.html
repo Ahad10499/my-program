@@ -1,0 +1,52 @@
+  <html>
+    <head>
+        <title>Javascript programming</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                
+                margin: 25%;
+            }
+        </style>
+
+        <script>
+           function store()
+           {
+                var inputEmail= document.getElementById("txtEmail");
+                localStorage.setItem("email", inputEmail.value);
+                
+                var inputPass= document.getElementById("txtPass");
+                localStorage.setItem("pass", inputPass.value);
+             
+                var d1= localStorage.getItem("email");
+                var d2= localStorage.getItem("pass");
+               
+                var display= [d1,d2];
+
+                document.write('<table>');
+                document.write('<tr>');
+                document.write('<th>First Name</th>');
+                document.write('<th>Last Name</th>');
+                document.write('</tr>');
+                document.write('</table>');
+                document.write('<tr');
+                    for(var i = 0; i < display.length; i++)
+                    {
+                        document.write(' <td>' + display[i] + '</td>');
+                    }
+                document.write('</tr>');
+                document.write('</table>');
+           }
+        </script>
+    </head>
+    <body>
+    
+        Email <br />
+        <input type="email"  id="txtEmail">
+        <br />
+        Password <br />
+        <input type="password"  id="txtPass"><br />
+        <input type="button" value="submit" onclick="store()">
+  
+    </body>
+</html>  

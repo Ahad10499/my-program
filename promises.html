@@ -16,7 +16,7 @@
             let x = 1;
 
             // some code (try to change x to 5)
-
+            console.log("check");
             if (x == 0) {
                 myResolve("true");
             } else {
@@ -24,10 +24,10 @@
             }
         });
 
-        myPromise.then(
-            function (value) { myDisplayer(value); },
-            function (error) { myDisplayer(error); }
-        );
+        // myPromise.then(
+        //     // function (value) { myDisplayer(value); },
+        //     // function (error) { myDisplayer(error); }
+        // );
     </script>
 
 </body>

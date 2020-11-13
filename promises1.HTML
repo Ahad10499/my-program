@@ -1,10 +1,11 @@
 <html>
     <head>
 <script>
+  console.log("before ");
     let promise = new Promise(function(resolve, reject) {
   setTimeout(() => resolve("done!"), 1000);
 });
-
+console.log("after");
 // resolve runs the first function in .then
 promise.then(
   result => alert(result), // shows "done!" after 1 second
